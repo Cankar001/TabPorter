@@ -1,0 +1,43 @@
+.dropzone
+{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    color: #ccc;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropzone .dropzone-items
+{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.dropzone .aero-dropzone-text
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0px);
+    transition: all .3s ease 0s;
+}
+
+.dropzone.dragover
+{
+    border-color: #000;
+    color: #000;
+}
+
+.dropzone.wrongFile
+{
+    border-color: #f00;
+    color: #f00;
+}
+

@@ -7,6 +7,7 @@
         <title>Tab Porter</title>
 
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="dropzone.css">
         <script src="popup.js"></script>
     </head>
     <body>
@@ -24,6 +25,12 @@
             </p>
         </div>
 
+        <div class="modal-dropzone-container">
+            <div class="dropzone">
+                <b>Drag- and drop</b> json files or <b>click</b> here to import new tabs
+            </div>
+        </div>
+
         <div class="modal-icons">
             <div class="flex-container">
                 <div class="flex">
@@ -32,10 +39,6 @@
 
                 <div class="flex">
                     <button type="button" class="exportTabs exportSelected">Export selected Tabs</button>
-                </div>
-                
-                <div class="flex">
-                    <button type="button" class="importTabs">Import Tabs</button>
                 </div>
 
                 <div class="flex">
@@ -48,5 +51,6 @@
             </div>
         </div>
 
+        <script src="dropzone.js"></script>
     </body>
 </html>

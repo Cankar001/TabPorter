@@ -76,30 +76,9 @@ document.addEventListener("DOMContentLoaded", function()
         exportSelectedTabs();
         });
 
-    document.querySelector('.importTabs').addEventListener('click', function()
-        {
-        let element = document.createElement('input');
-        element.setAttribute('type', 'file');
-        element.click();
-
-        element.addEventListener('change', function(e)
-            {
-            let file = this.files[0];
-            let fileReader = new FileReader();
-
-            fileReader.addEventListener('load', function(e)
-                {
-                let fileContent = e.target.result;
-                importTabs(fileContent);
-                });
-
-            fileReader.readAsText(file);
-            });
-        });
-
     document.querySelector('.aboutTabPorter').addEventListener('click', function()
         {
-        alert("Showing about");
+        chrome.tabs.create({ url: "https://www.cankarka.com" });
         });
     });
 
