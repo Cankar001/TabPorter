@@ -11,65 +11,90 @@ function download(filename, text)
   
     document.body.removeChild(element);
     }
-  
 
-function exportTabs()
+function chromeTabsToUrlArray(tabs)
+    {
+    let tabUrls = [];
+    for (let i = 0; i < tabs.length; i++)
+        {
+        tabUrls.push(tabs[i].url);
+        }
+
+    return tabUrls;
+    }
+
+function tabsToJSON(tabs)
+    {
+    const data = { "tabs": tabs };
+    return JSON.stringify(data);
+    }
+
+function tabsFromJSON(json)
+    {
+    let data = JSON.parse(json);
+    return data.tabs;
+    }
+
+function exportAllTabs()
     {
     chrome.tabs.getAllInWindow(null, function(tabs)
         {
-        let tabUrls = [];
-        for (let i = 0; i < tabs.length; i++)
-            {
-            tabUrls.push(tabs[i].url);
-            }
+        let tabUrls = chromeTabsToUrlArray(tabs);
+        let json = tabsToJSON(tabUrls);
+        download('tabs.json', json);
+        });
+    }
 
-        const data = {
-            "tabs": tabUrls,
-            "time": Date.now()
-        };
-
-        const json = JSON.stringify(data);
+function exportSelectedTabs()
+    {
+    chrome.tabs.query({ highlighted: true, currentWindow: true }, function(tabs)
+        {
+        let tabUrls = chromeTabsToUrlArray(tabs);
+        const json = tabsToJSON(tabUrls);
         download('tabs.json', json);
         });
     }
 
 function importTabs(json)
     {
-    let data = JSON.parse(json);
-    let tabs = data.tabs;
-
+    let tabs = tabsFromJSON(json);
     for (let i = 0; i < tabs.length; i++)
         {
         chrome.tabs.create({ url: tabs[i] });
         }
     }
 
-document.addEventListener("DOMContentLoaded", function(event)
+document.addEventListener("DOMContentLoaded", function()
     {
     document.querySelector('.exportTabs').addEventListener('click', function()
         {
-        exportTabs();
+        exportAllTabs();
+        });
+
+    document.querySelector('.exportTabs.exportSelected').addEventListener('click', function()
+        {
+        exportSelectedTabs();
         });
 
     document.querySelector('.importTabs').addEventListener('click', function()
         {
-            let element = document.createElement('input');
-            element.setAttribute('type', 'file');
-            element.click();
+        let element = document.createElement('input');
+        element.setAttribute('type', 'file');
+        element.click();
 
-            element.addEventListener('change', function(e)
+        element.addEventListener('change', function(e)
+            {
+            let file = this.files[0];
+            let fileReader = new FileReader();
+
+            fileReader.addEventListener('load', function(e)
                 {
-                let file = this.files[0];
-                let fileReader = new FileReader();
-
-                fileReader.addEventListener('load', function(e)
-                    {
-                    let fileContent = e.target.result;
-                    importTabs(fileContent);
-                    });
-
-                fileReader.readAsText(file);
+                let fileContent = e.target.result;
+                importTabs(fileContent);
                 });
+
+            fileReader.readAsText(file);
+            });
         });
 
     document.querySelector('.aboutTabPorter').addEventListener('click', function()
