@@ -4,10 +4,15 @@
     min-height: 100px;
     height: auto;
     color: #ccc;
-    line-height: 100px;
     text-align: center;
     cursor: pointer;
     position: relative;
+    display: inline-block;
+}
+
+.dropzone p
+{
+    margin-top: 25px;
 }
 
 .dropzone .dropzone-items

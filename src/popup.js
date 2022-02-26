@@ -80,5 +80,10 @@ document.addEventListener("DOMContentLoaded", function()
         {
         chrome.tabs.create({ url: "https://www.cankarka.com" });
         });
+
+    document.querySelector('.sourceCode').addEventListener('click', function()
+        {
+        chrome.tabs.create({ url: "https://github.com/Cankar001/TabPorter" });
+        });
     });
 
