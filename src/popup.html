@@ -16,15 +16,23 @@
         
         <div class="modal-header">
             <h1 class="logo">
-                <img src="images/icon.png" alt="Tab Porter Logo" class="logo-icon">
+                <img src="images/icon_black.png" alt="Tab Porter Logo" class="logo-icon">
                 Tab Porter <span class="version">(1.0.0)</span>
             </h1>
         </div>
 
         <div class="modal-content">
-            <p>
-                Tab Porter is a free plugin to import/export Tabs from Google Chrome.
+            <p class="intro">
+                Tab Porter aims to assist you in your daily life browsing the world wide web.
             </p>
+			<br><br>
+			<p class="explanation">
+				You can backup tabs you don't want to loose and restore them at any time you want.
+				Just select one of the buttons below to either export all opened tabs in the current window,
+				or make a selection before by shift-selecting your tabs and then select "Export selected tabs".
+				<br><br>
+				To restore your tabs just drag- and drop the exported file onto the dropzone below.
+			</p>
         </div>
 
         <div class="modal-dropzone-container">
@@ -37,8 +45,9 @@
 
         <div class="modal-icons">
             <div class="buttons">
-                <button type="button" class="btn btn-primary exportTabs">Export all Tabs</button>
-                <button type="button" class="btn btn-primary exportTabs exportSelected">Export selected Tabs</button>
+                <button type="button" class="btn btn-primary exportTabs">Export all tabs</button>
+                <button type="button" class="btn btn-primary exportTabs exportSelected">Export selected tabs</button>
+				<br>
                 <button type="button" class="btn btn-secondary aboutTabPorter">About</button>
                 <button type="button" class="btn btn-secondary sourceCode">Source Code</button>
             </div>

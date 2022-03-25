@@ -98,20 +98,24 @@ dropzone.addEventListener('click', function()
     {
     let element = document.createElement('input');
     element.setAttribute('type', 'file');
+	element.multiple = true;
     element.click();
 
     element.addEventListener('change', function(e)
         {
-        let file = this.files[0];
-        let fileReader = new FileReader();
+        let files = this.files;
+		for (let i = 0; i < files.length; ++i)
+			{
+			let fileReader = new FileReader();
 
-        fileReader.addEventListener('load', function(e)
-            {
-            let fileContent = e.target.result;
-            importTabs(fileContent);
-            });
+			fileReader.addEventListener('load', function(e)
+				{
+				let fileContent = e.target.result;
+				importTabs(fileContent);
+				});
 
-        fileReader.readAsText(file);
+			fileReader.readAsText(files[i]);
+			}			
         });
     });
 
