@@ -37,7 +37,7 @@ function tabsFromJSON(json)
 
 function exportAllTabs()
     {
-    chrome.tabs.getAllInWindow(null, function(tabs)
+    chrome.tabs.query({ currentWindow: true }, function(tabs)
         {
         let tabUrls = chromeTabsToUrlArray(tabs);
         let json = tabsToJSON(tabUrls);
