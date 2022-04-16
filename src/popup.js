@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function()
 
     document.querySelector('.aboutTabPorter').addEventListener('click', function()
         {
-        chrome.tabs.create({ url: "https://www.cankarka.com" });
+        chrome.tabs.create({ url: "https://www.tabporter.com" });
         });
 
     document.querySelector('.sourceCode').addEventListener('click', function()
