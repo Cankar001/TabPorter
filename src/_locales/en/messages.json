@@ -1,11 +1,11 @@
 {
     "appName": {
         "message": "Tab Porter",
-        "description": "Tab Porter is a free plugin to import/export Tabs from Google Chrome."
+        "description": ""
     },
     "appDesc": {
-        "message": "Tab Porter aims to assist you in your daily life browsing the world wide web.",
-        "description": "Tab Porter is a free plugin to import/export Tabs from Google Chrome."
+        "message": "Tab Porter is a free plugin to import/export Tabs from Google Chrome.",
+        "description": ""
     },
 
     "introText": {
