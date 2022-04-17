@@ -1,0 +1,44 @@
+{
+    "appName": {
+        "message": "Tab Porter",
+        "description": "Tab Porter ist ein gratis Plugin, welches Tabs von Google Chrome exportieren und importieren kann."
+    },
+    "appDesc": {
+        "message": "Tab Porter wurde dafür geschaffen, Ihr alltägliches browsen im Internet zu vereinfachen.",
+        "description": "Tab Porter ist ein gratis Plugin, welches Tabs von Google Chrome exportieren und importieren kann."
+    },
+
+    "introText": {
+        "message": "Tab Porter wurde dafür geschaffen, Ihr alltägliches browsen im Internet zu vereinfachen.",
+        "description": ""
+    },
+    "howTo_one": {
+        "message": "Tabs, die Sie nicht verlieren wollen können Sie mit diesem Plugin einfach auf Ihrem PC speichern. Die gespeicherten Tabs können jederzeit wieder in Google Chrome importiert werden, indem Sie die Datei, die beim Export automatisch heruntergeladen wurde einfach wieder auf das untere Feld ziehen.",
+        "description": ""
+    },
+    "howTo_two": {
+        "message": "Sie haben zwei Optionen, Tabs aus Google Chrome zu exportieren: Entweder können Sie alle Tabs aus dem aktuellen Chrome Fenster exportieren, indem Sie auf \"Alle Tabs exportieren\" klicken, oder Sie machen vorher eine Auswahl, indem Sie die Tabs mit gehaltener Shift-Taste zuvor auswählen, die Sie exportieren möchten und klicken dann auf \"Ausgewählte Tabs exportieren\".",
+        "description": ""
+    },
+    "dropzone": {
+        "message": "Ziehen Sie die JSON Datei <b>hier</b> hinein oder klicken Sie <b>hier</b>",
+        "description": ""
+    },
+
+    "export_all_tabs_btn": {
+        "message": "Alle Tabs exportieren",
+        "description": ""
+    },
+    "export_selected_tabs_btn": {
+        "message": "Ausgewählte Tabs exportieren",
+        "description": ""
+    },
+    "about_btn": {
+        "message": "Über TabPorter",
+        "description": ""
+    },
+    "source_btn": {
+        "message": "Source Code",
+        "description": ""
+    }
+}

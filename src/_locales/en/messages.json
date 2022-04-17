@@ -1,0 +1,44 @@
+{
+    "appName": {
+        "message": "Tab Porter",
+        "description": "Tab Porter is a free plugin to import/export Tabs from Google Chrome."
+    },
+    "appDesc": {
+        "message": "Tab Porter aims to assist you in your daily life browsing the world wide web.",
+        "description": "Tab Porter is a free plugin to import/export Tabs from Google Chrome."
+    },
+
+    "introText": {
+        "message": "Tab Porter aims to assist you in your daily life browsing the world wide web.",
+        "description": ""
+    },
+    "howTo_one": {
+        "message": "You can backup tabs you don't want to loose and restore them at any time you want. Just select one of the buttons below to either export all opened tabs in the current window, or make a selection before by shift-selecting your tabs and then select \"Export selected tabs\".",
+        "description": ""
+    },
+    "howTo_two": {
+        "message": "To restore your tabs just drag- and drop the exported file onto the dropzone below.",
+        "description": ""
+    },
+        "dropzone": {
+        "message": "<b>Drag- and drop</b> json files or <b>click</b> here to import new tabs",
+        "description": ""
+    },
+
+    "export_all_tabs_btn": {
+        "message": "Export all tabs",
+        "description": ""
+    },
+    "export_selected_tabs_btn": {
+        "message": "Export selected tabs",
+        "description": ""
+    },
+    "about_btn": {
+        "message": "About TabPorter",
+        "description": ""
+    },
+    "source_btn": {
+        "message": "Source code",
+        "description": ""
+    }
+}

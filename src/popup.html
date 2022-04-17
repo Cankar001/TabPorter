@@ -25,13 +25,17 @@
             <p class="intro">
                 Tab Porter aims to assist you in your daily life browsing the world wide web.
             </p>
-			<br><br>
+			<br>
 			<p class="explanation">
-				You can backup tabs you don't want to loose and restore them at any time you want.
-				Just select one of the buttons below to either export all opened tabs in the current window,
-				or make a selection before by shift-selecting your tabs and then select "Export selected tabs".
+                <span class="part-one">
+                    You can backup tabs you don't want to loose and restore them at any time you want.
+                    Just select one of the buttons below to either export all opened tabs in the current window,
+                    or make a selection before by shift-selecting your tabs and then select "Export selected tabs".
+                </span>
 				<br><br>
-				To restore your tabs just drag- and drop the exported file onto the dropzone below.
+                <span class="part-two">
+                    To restore your tabs just drag- and drop the exported file onto the dropzone below.
+                </span>
 			</p>
         </div>
 
@@ -45,7 +49,7 @@
 
         <div class="modal-icons">
             <div class="buttons">
-                <button type="button" class="btn btn-primary exportTabs">Export all tabs</button>
+                <button type="button" class="btn btn-primary exportTabs exportAllTabs">Export all tabs</button>
                 <button type="button" class="btn btn-primary exportTabs exportSelected">Export selected tabs</button>
 				<br>
                 <button type="button" class="btn btn-secondary aboutTabPorter">About</button>
@@ -54,5 +58,6 @@
         </div>
 
         <script src="dropzone.js"></script>
+        <script src="translations.js"></script>
     </body>
 </html>

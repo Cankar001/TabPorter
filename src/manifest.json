@@ -1,7 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Tab Porter",
-    "description": "Tab Porter is a free plugin to import/export Tabs from Google Chrome.",
+    "name": "__MSG_appName__",
+    "description": "__MSG_appDesc__",
+    "default_locale": "en",
     "version": "1.0.0",
     "icons": { "128": "images/icon_128.png" },
     "action": {
