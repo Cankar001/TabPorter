@@ -13,7 +13,7 @@
         "description": ""
     },
     "howTo_one": {
-        "message": "Tabs, die Sie nicht verlieren wollen können Sie mit diesem Plugin einfach auf Ihrem PC speichern. Die gespeicherten Tabs können jederzeit wieder in Google Chrome importiert werden, indem Sie die Datei, die beim Export automatisch heruntergeladen wurde einfach wieder auf das untere Feld ziehen.",
+        "message": "Tabs, die Sie nicht verlieren wollen, können Sie mit diesem Plugin einfach auf Ihrem Gerät speichern. Die gespeicherten Tabs können jederzeit wieder in Google Chrome importiert werden, indem Sie die Datei, die beim Export automatisch heruntergeladen wurde, wieder auf das untere Feld ziehen.",
         "description": ""
     },
     "howTo_two": {
@@ -38,7 +38,7 @@
         "description": ""
     },
     "source_btn": {
-        "message": "Source Code",
+        "message": "Source Code auf Github",
         "description": ""
     }
 }
